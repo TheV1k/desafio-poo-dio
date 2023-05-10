@@ -24,11 +24,11 @@ public class Emprestimo {
     public static void calcular (double valor, int parcelas){
 
         if(parcelas ==2){
-            double valorFinal = valor * (valor + getTaxaDuasParcelas());
+            double valorFinal = valor + (valor * getTaxaDuasParcelas());
 
                     System.out.println("O valor do empréstimo em duas parcelas é R$ " + valorFinal);
         }else if(parcelas ==3){
-            double valorFinal = valor + (valor + getTaxaTresParcelas());
+            double valorFinal = valor + (valor * getTaxaTresParcelas());
 
                 System.out.println("O valor do empréstimo em três parcelas é R$ " + valorFinal);
         }else{
