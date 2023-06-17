@@ -40,11 +40,24 @@ public class Main {
         devVictor.setNome("Victor");
         devVictor.inscreverBootcamp(bootcamp);
         System.out.println("Conteudos inscritos: " + devVictor.getConteudosInscritos());
+        System.out.println("--");
+        devVictor.progredir();
+        devVictor.progredir();
+        devVictor.progredir();
+        System.out.println("Conteudos inscritos: " + devVictor.getConteudosInscritos());
+        System.out.println("Conteudos finalizados: " + devVictor.getConteudosConcluidos());
+        System.out.println("XP: " + devVictor.calcularTotalXp());
+
+        System.out.println("-------------------");
 
         Dev devCynthya = new Dev();
         devCynthya.setNome("Cynthya");
         devCynthya.inscreverBootcamp(bootcamp);
-        System.out.println("Conteudos inscritos: " + devVictor.getConteudosInscritos());
+        System.out.println("Conteudos inscritos: " + devCynthya.getConteudosInscritos());
+        devCynthya.progredir();
+        System.out.println("Conteudos inscritos: " + devCynthya.getConteudosInscritos());
+        System.out.println("Conteudos finalizados: " + devCynthya.getConteudosConcluidos());
+        System.out.println("XP: " + devCynthya.calcularTotalXp());
 
 
 
